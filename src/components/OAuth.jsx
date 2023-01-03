@@ -1,5 +1,4 @@
-import { GoogleAuthProvider, getAuth, signInWithPopup } from '@firebase/auth'
-import React from 'react'
+
 import { useNavigate } from 'react-router-dom'
 
 export default function OAuth() {
@@ -7,7 +6,7 @@ export default function OAuth() {
 
     function onGoogleClick() {
         try {
-
+alert('works')
        
   
           
@@ -15,7 +14,7 @@ export default function OAuth() {
 
         
         } catch (error) {
-    
+    alert('not working')
         }
     }
   return (

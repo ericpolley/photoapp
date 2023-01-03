@@ -9,7 +9,7 @@ export default function ForgotPassword() {
  
     });
     
-    const { email, password} = formData;
+    const { email } = formData;
     
     function onChange(e) {
       setFormData((prevState)=>({
@@ -31,14 +31,14 @@ export default function ForgotPassword() {
     
       return (
       <section className='flex justify-center'>
-        <main className='border-4 border-b-8 border-t-[12px] bg-teal-700 border-teal-500 mt-12 w-[300px] md:w-[600px] p-2 rounded-2xl text-teal-100'>
+        <main >
           <h1 className='text-2xl m-4'>Reset Password</h1>
           <article className='mt-6 flex flex-col items-center justify-center'>
             <form onSubmit={onSubmit} className='flex flex-col items-center text-black'>
               <input type="email" onChange={onChange} name="email" id="email" value={email} placeholder=" Email " 
               className=' border-2 border-teal-500 rounded-lg text-lg w-64 mb-6'/>
               {/* links to other pages */}
-              <p className='mb-3'>Don't have an Account? <Link to="/sign-up" className='text-blue-300 font-semibold ml-3' > Sign Up Now</Link></p>
+              <p className='mb-3 text-white'>Don't have an Account? <Link to="/sign-up" className='text-blue-300 font-semibold ml-3' > Sign Up Now</Link></p>
            
               {/*Submit button */}
               <button className="

@@ -16,6 +16,8 @@ function App() {
   
     <BrowserRouter>
     <Header />
+    <div className='flex justify-center'>
+    <div className='border-4 border-b-8 pb-12 pt-6 border-t-[12px] bg-teal-700 border-teal-500 mt-12 w-[90%] md:w-[80%] p-2 rounded-2xl text-teal-100'>
     <Routes>
       <Route path="/" element={<Home /> } />
       <Route path="/forgot-password" element={<ForgotPassword /> } />
@@ -25,6 +27,7 @@ function App() {
       <Route path="/sign-in" element={<SignIn /> } />
       <Route path="/profile" element={<Profile /> } />
     </Routes>
+  </div></div>
     </BrowserRouter>
    
    
