@@ -9,7 +9,7 @@ export default function Header() {
       </div> 
         <div className="w-full flex items-end justify-start text-white p-1 cursor-pointer">
             <p className='space-x-5 md:text-base  text-sm'>
-            <span onClick={()=>navigate(("/"))}>Home</span>
+            <span className='hidden md:inline-block' onClick={()=>navigate(("/"))}>Home</span>
             <span onClick={()=>navigate(("/offers"))}>Offers</span>
             <span onClick={()=>navigate(("/about"))}>About</span>
             <span onClick={()=>navigate(("/sign-in"))}>Sign In</span>
